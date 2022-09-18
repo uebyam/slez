@@ -959,7 +959,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                     </imageReference>
                                 </state>
                                 <connections>
-                                    <segue destination="Zbm-kD-VPM" kind="unwind" unwindAction="unwindToMainMenu:" id="bSm-qE-by5"/>
+                                    <segue destination="Zbm-kD-VPM" kind="unwind" unwindAction="unwindToMainMenu:" id="6KD-iB-aQ0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Announcements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJE-6O-HGM">
@@ -1469,6 +1469,9 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                         </hierarchicalColors>
                                     </imageReference>
                                 </state>
+                                <connections>
+                                    <segue destination="yU9-Ld-DUW" kind="unwind" unwindAction="unwindToMainMenu:" id="JSs-HH-5rc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6j4-rS-wC5"/>
@@ -1535,6 +1538,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k47-oc-Und" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="yU9-Ld-DUW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1051.875" y="801.76056338028172"/>
         </scene>
@@ -1561,7 +1565,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                     </imageReference>
                                 </state>
                                 <connections>
-                                    <segue destination="KAy-G4-tCS" kind="unwind" unwindAction="unwindToMainMenu:" id="mjM-p0-EPY"/>
+                                    <segue destination="KAy-G4-tCS" kind="unwind" unwindAction="unwindToMainMenu:" id="035-Y6-4nw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duty Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLp-nl-OyM">
@@ -1852,7 +1856,7 @@ Woo, this sounds like some kind of Russian spy mission. Don't worry guys, all yo
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pYx-CP-wn2" kind="unwind" unwindAction="unwindToMainMenu:" id="dgz-dh-5b4"/>
+                                    <segue destination="pYx-CP-wn2" kind="unwind" unwindAction="unwindToMainMenu:" id="Lvz-x3-YpY"/>
                                 </connections>
                             </button>
                         </subviews>
