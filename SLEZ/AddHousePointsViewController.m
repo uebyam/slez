@@ -18,7 +18,7 @@
     NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
     f.numberStyle = NSNumberFormatterDecimalStyle;
     self.number = [f numberFromString:self.inputField.text].longValue;
-    self.diffLabel.text = [NSString stringWithFormat:@"%+ld", self.number - self.previousNumber]; ,
+    self.diffLabel.text = [NSString stringWithFormat:@"%+ld", self.number - self.previousNumber];
     [self.view endEditing:true];
 }
 
