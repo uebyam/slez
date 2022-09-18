@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F10D6B8228CC7D4300E08F14 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10D6B8128CC7D4300E08F14 /* MainMenuViewController.m */; };
+		F1136E5A28CD2F87007154A7 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F1136E5928CD2F87007154A7 /* GoogleSignIn */; };
+		F12B3DE928B5A75F00B309E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F12B3DE828B5A75F00B309E7 /* AppDelegate.m */; };
+		F12B3DEC28B5A75F00B309E7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F12B3DEB28B5A75F00B309E7 /* SceneDelegate.m */; };
+		F12B3DEF28B5A75F00B309E7 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12B3DEE28B5A75F00B309E7 /* SignInViewController.m */; };
+		F12B3DF228B5A75F00B309E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12B3DF028B5A75F00B309E7 /* Main.storyboard */; };
+		F12B3DF428B5A76000B309E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12B3DF328B5A76000B309E7 /* Assets.xcassets */; };
+		F12B3DF728B5A76000B309E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12B3DF528B5A76000B309E7 /* LaunchScreen.storyboard */; };
+		F12B3DFA28B5A76000B309E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F12B3DF928B5A76000B309E7 /* main.m */; };
+		F12F919B28D0B16C002E6D9A /* AnnouncementDiscussionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12F919A28D0B16C002E6D9A /* AnnouncementDiscussionViewController.m */; };
+		F13549C728CF59FB005BCB61 /* IdeaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13549C628CF59FB005BCB61 /* IdeaDetailViewController.m */; };
+		F13D0B1728D659B800017554 /* IdeaBoardDiscussionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D0B1628D659B800017554 /* IdeaBoardDiscussionViewController.m */; };
+		F142578E28C8E484000BE7A0 /* GoogleService-Info-Old.plist in Resources */ = {isa = PBXBuildFile; fileRef = F142578D28C8E484000BE7A0 /* GoogleService-Info-Old.plist */; };
+		F142579128C8E595000BE7A0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F142579028C8E595000BE7A0 /* FirebaseAnalytics */; };
+		F142579328C8E595000BE7A0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F142579228C8E595000BE7A0 /* FirebaseAuth */; };
+		F142579528C8E595000BE7A0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F142579428C8E595000BE7A0 /* FirebaseDatabase */; };
+		F142579728C8E595000BE7A0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F142579628C8E595000BE7A0 /* FirebaseFirestore */; };
+		F142579928C8E595000BE7A0 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = F142579828C8E595000BE7A0 /* FirebaseFunctions */; };
+		F142579B28C8E595000BE7A0 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F142579A28C8E595000BE7A0 /* FirebaseMessaging */; };
+		F142579D28C8E595000BE7A0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F142579C28C8E595000BE7A0 /* FirebaseStorage */; };
+		F143D92A28D728C2007C3C6C /* IdeaWriteCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F143D92928D728C2007C3C6C /* IdeaWriteCommentViewController.m */; };
+		F14A6CFC28CDCBFA002AFC9D /* DutyStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14A6CFB28CDCBFA002AFC9D /* DutyStudentsViewController.m */; };
+		F16EC19C28CC4797000C8C99 /* AnnouncementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16EC19B28CC4797000C8C99 /* AnnouncementsViewController.m */; };
+		F17650FD28CCE6E700F4660E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F17650FC28CCE6E700F4660E /* GoogleService-Info.plist */; };
+		F176510028CCFF2800F4660E /* head.m in Sources */ = {isa = PBXBuildFile; fileRef = F17650FF28CCFF2800F4660E /* head.m */; };
+		F1BDB6A928D75EA3004AC0A3 /* AddHousePointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BDB6A828D75EA3004AC0A3 /* AddHousePointsViewController.m */; };
+		F1CEFAB928CC793F00E998C5 /* AnnouncementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CEFAB828CC793F00E998C5 /* AnnouncementViewController.m */; };
+		F1CF347328CC96F6003A968C /* HousePointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CF347228CC96F6003A968C /* HousePointsViewController.m */; };
+		F1CF347628CCBB58003A968C /* DutyLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CF347528CCBB58003A968C /* DutyLocationsViewController.m */; };
+		F1D7C83428CE24C2000AFAC9 /* IdeaBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D7C83328CE24C2000AFAC9 /* IdeaBoardViewController.m */; };
+		F1E3B6B028D15D9500ECCDFC /* AnnouncementWriteCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E3B6AF28D15D9500ECCDFC /* AnnouncementWriteCommentViewController.m */; };
+		F1F030BA28D4BE5900CCD224 /* AnnouncementPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F030B928D4BE5900CCD224 /* AnnouncementPostViewController.m */; };
+		F1FF001B28D64CA60082E570 /* IdeaHead.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF001A28D64CA60082E570 /* IdeaHead.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F10D6B8028CC7D4300E08F14 /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		F10D6B8128CC7D4300E08F14 /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		F12B3DE428B5A75F00B309E7 /* SLEZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLEZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12B3DE728B5A75F00B309E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F12B3DE828B5A75F00B309E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F12B3DEA28B5A75F00B309E7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F12B3DEB28B5A75F00B309E7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F12B3DED28B5A75F00B309E7 /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		F12B3DEE28B5A75F00B309E7 /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		F12B3DF128B5A75F00B309E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F12B3DF328B5A76000B309E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F12B3DF628B5A76000B309E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F12B3DF828B5A76000B309E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12B3DF928B5A76000B309E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F12F919928D0B16C002E6D9A /* AnnouncementDiscussionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnouncementDiscussionViewController.h; sourceTree = "<group>"; };
+		F12F919A28D0B16C002E6D9A /* AnnouncementDiscussionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnouncementDiscussionViewController.m; sourceTree = "<group>"; };
+		F13549C428CF3A14005BCB61 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		F13549C528CF59FB005BCB61 /* IdeaDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdeaDetailViewController.h; sourceTree = "<group>"; };
+		F13549C628CF59FB005BCB61 /* IdeaDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdeaDetailViewController.m; sourceTree = "<group>"; };
+		F13D0B1528D659B800017554 /* IdeaBoardDiscussionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdeaBoardDiscussionViewController.h; sourceTree = "<group>"; };
+		F13D0B1628D659B800017554 /* IdeaBoardDiscussionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdeaBoardDiscussionViewController.m; sourceTree = "<group>"; };
+		F142578D28C8E484000BE7A0 /* GoogleService-Info-Old.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Old.plist"; sourceTree = "<group>"; };
+		F142579E28C8EB24000BE7A0 /* SLEZ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SLEZ.entitlements; sourceTree = "<group>"; };
+		F143D92828D728C2007C3C6C /* IdeaWriteCommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdeaWriteCommentViewController.h; sourceTree = "<group>"; };
+		F143D92928D728C2007C3C6C /* IdeaWriteCommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdeaWriteCommentViewController.m; sourceTree = "<group>"; };
+		F14A6CFA28CDCBFA002AFC9D /* DutyStudentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DutyStudentsViewController.h; sourceTree = "<group>"; };
+		F14A6CFB28CDCBFA002AFC9D /* DutyStudentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DutyStudentsViewController.m; sourceTree = "<group>"; };
+		F16EC19A28CC4797000C8C99 /* AnnouncementsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnouncementsViewController.h; sourceTree = "<group>"; };
+		F16EC19B28CC4797000C8C99 /* AnnouncementsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsViewController.m; sourceTree = "<group>"; };
+		F17650FC28CCE6E700F4660E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F17650FE28CCE81700F4660E /* head.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = head.h; sourceTree = "<group>"; };
+		F17650FF28CCFF2800F4660E /* head.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = head.m; sourceTree = "<group>"; };
+		F1BDB6A728D75EA3004AC0A3 /* AddHousePointsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddHousePointsViewController.h; sourceTree = "<group>"; };
+		F1BDB6A828D75EA3004AC0A3 /* AddHousePointsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddHousePointsViewController.m; sourceTree = "<group>"; };
+		F1CEFAB728CC793F00E998C5 /* AnnouncementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnouncementViewController.h; sourceTree = "<group>"; };
+		F1CEFAB828CC793F00E998C5 /* AnnouncementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnouncementViewController.m; sourceTree = "<group>"; };
+		F1CF347128CC96F6003A968C /* HousePointsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HousePointsViewController.h; sourceTree = "<group>"; };
+		F1CF347228CC96F6003A968C /* HousePointsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HousePointsViewController.m; sourceTree = "<group>"; };
+		F1CF347428CCBB58003A968C /* DutyLocationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DutyLocationsViewController.h; sourceTree = "<group>"; };
+		F1CF347528CCBB58003A968C /* DutyLocationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DutyLocationsViewController.m; sourceTree = "<group>"; };
+		F1D7C83228CE24C2000AFAC9 /* IdeaBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdeaBoardViewController.h; sourceTree = "<group>"; };
+		F1D7C83328CE24C2000AFAC9 /* IdeaBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdeaBoardViewController.m; sourceTree = "<group>"; };
+		F1E3B6AD28D154B300ECCDFC /* AnnouncementHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnouncementHead.h; sourceTree = "<group>"; };
+		F1E3B6AE28D15D9500ECCDFC /* AnnouncementWriteCommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnouncementWriteCommentViewController.h; sourceTree = "<group>"; };
+		F1E3B6AF28D15D9500ECCDFC /* AnnouncementWriteCommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnouncementWriteCommentViewController.m; sourceTree = "<group>"; };
+		F1F030B828D4BE5900CCD224 /* AnnouncementPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnouncementPostViewController.h; sourceTree = "<group>"; };
+		F1F030B928D4BE5900CCD224 /* AnnouncementPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnouncementPostViewController.m; sourceTree = "<group>"; };
+		F1FF001928D64C5C0082E570 /* IdeaHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdeaHead.h; sourceTree = "<group>"; };
+		F1FF001A28D64CA60082E570 /* IdeaHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdeaHead.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F12B3DE128B5A75F00B309E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F142579B28C8E595000BE7A0 /* FirebaseMessaging in Frameworks */,
+				F1136E5A28CD2F87007154A7 /* GoogleSignIn in Frameworks */,
+				F142579528C8E595000BE7A0 /* FirebaseDatabase in Frameworks */,
+				F142579728C8E595000BE7A0 /* FirebaseFirestore in Frameworks */,
+				F142579928C8E595000BE7A0 /* FirebaseFunctions in Frameworks */,
+				F142579D28C8E595000BE7A0 /* FirebaseStorage in Frameworks */,
+				F142579128C8E595000BE7A0 /* FirebaseAnalytics in Frameworks */,
+				F142579328C8E595000BE7A0 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F12B3DDB28B5A75F00B309E7 = {
+			isa = PBXGroup;
+			children = (
+				F12B3DE628B5A75F00B309E7 /* SLEZ */,
+				F12B3DE528B5A75F00B309E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F12B3DE528B5A75F00B309E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F12B3DE428B5A75F00B309E7 /* SLEZ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F12B3DE628B5A75F00B309E7 /* SLEZ */ = {
+			isa = PBXGroup;
+			children = (
+				F142579E28C8EB24000BE7A0 /* SLEZ.entitlements */,
+				F17650FE28CCE81700F4660E /* head.h */,
+				F17650FF28CCFF2800F4660E /* head.m */,
+				F12B3DE728B5A75F00B309E7 /* AppDelegate.h */,
+				F12B3DE828B5A75F00B309E7 /* AppDelegate.m */,
+				F12B3DEA28B5A75F00B309E7 /* SceneDelegate.h */,
+				F12B3DEB28B5A75F00B309E7 /* SceneDelegate.m */,
+				F143D92828D728C2007C3C6C /* IdeaWriteCommentViewController.h */,
+				F143D92928D728C2007C3C6C /* IdeaWriteCommentViewController.m */,
+				F1E3B6AD28D154B300ECCDFC /* AnnouncementHead.h */,
+				F1FF001928D64C5C0082E570 /* IdeaHead.h */,
+				F1FF001A28D64CA60082E570 /* IdeaHead.m */,
+				F12B3DF028B5A75F00B309E7 /* Main.storyboard */,
+				F12B3DF328B5A76000B309E7 /* Assets.xcassets */,
+				F13549C428CF3A14005BCB61 /* Inter-VariableFont_slnt,wght.ttf */,
+				F12B3DF528B5A76000B309E7 /* LaunchScreen.storyboard */,
+				F12B3DF828B5A76000B309E7 /* Info.plist */,
+				F12B3DF928B5A76000B309E7 /* main.m */,
+				F142578D28C8E484000BE7A0 /* GoogleService-Info-Old.plist */,
+				F12B3DED28B5A75F00B309E7 /* SignInViewController.h */,
+				F12B3DEE28B5A75F00B309E7 /* SignInViewController.m */,
+				F1CF347428CCBB58003A968C /* DutyLocationsViewController.h */,
+				F1CF347528CCBB58003A968C /* DutyLocationsViewController.m */,
+				F10D6B8028CC7D4300E08F14 /* MainMenuViewController.h */,
+				F10D6B8128CC7D4300E08F14 /* MainMenuViewController.m */,
+				F1CF347128CC96F6003A968C /* HousePointsViewController.h */,
+				F1CF347228CC96F6003A968C /* HousePointsViewController.m */,
+				F14A6CFA28CDCBFA002AFC9D /* DutyStudentsViewController.h */,
+				F14A6CFB28CDCBFA002AFC9D /* DutyStudentsViewController.m */,
+				F1E3B6AE28D15D9500ECCDFC /* AnnouncementWriteCommentViewController.h */,
+				F1E3B6AF28D15D9500ECCDFC /* AnnouncementWriteCommentViewController.m */,
+				F1F030B828D4BE5900CCD224 /* AnnouncementPostViewController.h */,
+				F1F030B928D4BE5900CCD224 /* AnnouncementPostViewController.m */,
+				F16EC19A28CC4797000C8C99 /* AnnouncementsViewController.h */,
+				F16EC19B28CC4797000C8C99 /* AnnouncementsViewController.m */,
+				F1CEFAB728CC793F00E998C5 /* AnnouncementViewController.h */,
+				F1CEFAB828CC793F00E998C5 /* AnnouncementViewController.m */,
+				F12F919928D0B16C002E6D9A /* AnnouncementDiscussionViewController.h */,
+				F12F919A28D0B16C002E6D9A /* AnnouncementDiscussionViewController.m */,
+				F1D7C83228CE24C2000AFAC9 /* IdeaBoardViewController.h */,
+				F1D7C83328CE24C2000AFAC9 /* IdeaBoardViewController.m */,
+				F13549C528CF59FB005BCB61 /* IdeaDetailViewController.h */,
+				F13549C628CF59FB005BCB61 /* IdeaDetailViewController.m */,
+				F13D0B1528D659B800017554 /* IdeaBoardDiscussionViewController.h */,
+				F13D0B1628D659B800017554 /* IdeaBoardDiscussionViewController.m */,
+				F17650FC28CCE6E700F4660E /* GoogleService-Info.plist */,
+				F1BDB6A728D75EA3004AC0A3 /* AddHousePointsViewController.h */,
+				F1BDB6A828D75EA3004AC0A3 /* AddHousePointsViewController.m */,
+			);
+			path = SLEZ;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F12B3DE328B5A75F00B309E7 /* SLEZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12B3DFD28B5A76000B309E7 /* Build configuration list for PBXNativeTarget "SLEZ" */;
+			buildPhases = (
+				F12B3DE028B5A75F00B309E7 /* Sources */,
+				F12B3DE128B5A75F00B309E7 /* Frameworks */,
+				F12B3DE228B5A75F00B309E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLEZ;
+			packageProductDependencies = (
+				F142579028C8E595000BE7A0 /* FirebaseAnalytics */,
+				F142579228C8E595000BE7A0 /* FirebaseAuth */,
+				F142579428C8E595000BE7A0 /* FirebaseDatabase */,
+				F142579628C8E595000BE7A0 /* FirebaseFirestore */,
+				F142579828C8E595000BE7A0 /* FirebaseFunctions */,
+				F142579A28C8E595000BE7A0 /* FirebaseMessaging */,
+				F142579C28C8E595000BE7A0 /* FirebaseStorage */,
+				F1136E5928CD2F87007154A7 /* GoogleSignIn */,
+			);
+			productName = SLEZ;
+			productReference = F12B3DE428B5A75F00B309E7 /* SLEZ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F12B3DDC28B5A75F00B309E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F12B3DE328B5A75F00B309E7 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = F12B3DDF28B5A75F00B309E7 /* Build configuration list for PBXProject "SLEZ" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F12B3DDB28B5A75F00B309E7;
+			packageReferences = (
+				F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F1136E5828CD2F87007154A7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = F12B3DE528B5A75F00B309E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F12B3DE328B5A75F00B309E7 /* SLEZ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F12B3DE228B5A75F00B309E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12B3DF728B5A76000B309E7 /* LaunchScreen.storyboard in Resources */,
+				F142578E28C8E484000BE7A0 /* GoogleService-Info-Old.plist in Resources */,
+				F17650FD28CCE6E700F4660E /* GoogleService-Info.plist in Resources */,
+				F12B3DF428B5A76000B309E7 /* Assets.xcassets in Resources */,
+				F12B3DF228B5A75F00B309E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F12B3DE028B5A75F00B309E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12B3DEF28B5A75F00B309E7 /* SignInViewController.m in Sources */,
+				F16EC19C28CC4797000C8C99 /* AnnouncementsViewController.m in Sources */,
+				F13D0B1728D659B800017554 /* IdeaBoardDiscussionViewController.m in Sources */,
+				F1CF347628CCBB58003A968C /* DutyLocationsViewController.m in Sources */,
+				F176510028CCFF2800F4660E /* head.m in Sources */,
+				F12B3DE928B5A75F00B309E7 /* AppDelegate.m in Sources */,
+				F1E3B6B028D15D9500ECCDFC /* AnnouncementWriteCommentViewController.m in Sources */,
+				F1FF001B28D64CA60082E570 /* IdeaHead.m in Sources */,
+				F1F030BA28D4BE5900CCD224 /* AnnouncementPostViewController.m in Sources */,
+				F14A6CFC28CDCBFA002AFC9D /* DutyStudentsViewController.m in Sources */,
+				F1D7C83428CE24C2000AFAC9 /* IdeaBoardViewController.m in Sources */,
+				F10D6B8228CC7D4300E08F14 /* MainMenuViewController.m in Sources */,
+				F12B3DFA28B5A76000B309E7 /* main.m in Sources */,
+				F12B3DEC28B5A75F00B309E7 /* SceneDelegate.m in Sources */,
+				F1BDB6A928D75EA3004AC0A3 /* AddHousePointsViewController.m in Sources */,
+				F1CEFAB928CC793F00E998C5 /* AnnouncementViewController.m in Sources */,
+				F143D92A28D728C2007C3C6C /* IdeaWriteCommentViewController.m in Sources */,
+				F13549C728CF59FB005BCB61 /* IdeaDetailViewController.m in Sources */,
+				F1CF347328CC96F6003A968C /* HousePointsViewController.m in Sources */,
+				F12F919B28D0B16C002E6D9A /* AnnouncementDiscussionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F12B3DF028B5A75F00B309E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F12B3DF128B5A75F00B309E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F12B3DF528B5A76000B309E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F12B3DF628B5A76000B309E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F12B3DFB28B5A76000B309E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F12B3DFC28B5A76000B309E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F12B3DFE28B5A76000B309E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SLEZ/SLEZ.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TM2N745M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SLEZ/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reyalph.SLEZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F12B3DFF28B5A76000B309E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SLEZ/SLEZ.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TM2N745M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SLEZ/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reyalph.SLEZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F12B3DDF28B5A75F00B309E7 /* Build configuration list for PBXProject "SLEZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12B3DFB28B5A76000B309E7 /* Debug */,
+				F12B3DFC28B5A76000B309E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12B3DFD28B5A76000B309E7 /* Build configuration list for PBXNativeTarget "SLEZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12B3DFE28B5A76000B309E7 /* Debug */,
+				F12B3DFF28B5A76000B309E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1136E5828CD2F87007154A7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1136E5928CD2F87007154A7 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1136E5828CD2F87007154A7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		F142579028C8E595000BE7A0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F142579228C8E595000BE7A0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F142579428C8E595000BE7A0 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F142579628C8E595000BE7A0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F142579828C8E595000BE7A0 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		F142579A28C8E595000BE7A0 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		F142579C28C8E595000BE7A0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F142578F28C8E595000BE7A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F12B3DDC28B5A75F00B309E7 /* Project object */;
+}
