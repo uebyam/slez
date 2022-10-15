@@ -85,12 +85,12 @@
     UITableViewCell* cell;
     UIView* cellView;
     
-    if ([self.ideas[indexPath.row].author isEqualToString:currentUser.email]) {
+    /* if ([self.ideas[indexPath.row].author isEqualToString:currentUser.email]) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"ideaOwner" forIndexPath:indexPath];
         cellView = [cell.contentView viewWithTag:1];
         UIButton* deleteButton = [cellView viewWithTag:4];
         [deleteButton addTarget:self action:@selector(deleteIdea:) forControlEvents:UIControlEventTouchUpInside];
-    } else {
+    } else */ {
         cell = [tableView dequeueReusableCellWithIdentifier:@"idea" forIndexPath:indexPath];
         cellView = [cell.contentView viewWithTag:1];
     }

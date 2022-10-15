@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21501.1"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -987,73 +987,8 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <color key="separatorColor" red="0.64625850340000002" green="0.55102040819999998" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="announcementOwner" id="LGL-8y-7NZ">
-                                        <rect key="frame" x="0.0" y="50" width="288" height="139"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LGL-8y-7NZ" id="8Zi-oI-DTv">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="139"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNg-Gp-eaq">
-                                                    <rect key="frame" x="4" y="8" width="280" height="123"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[S3, S4, S1, S2] Please make your way to MPH for phototaking" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlB-nK-bMR">
-                                                            <rect key="frame" x="8" y="8" width="224" height="41"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                            <color key="textColor" name="appLabelColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-W4-yI5">
-                                                            <rect key="frame" x="8" y="57" width="264" height="58"/>
-                                                            <string key="text">Dear students, today is phototaking day. Please leave your bags in your classroom and come to the MPH in Block D for a school-wide phototaking at 1.15 p.m. The phototakers will take around 45 minutes to organise everyone and take the photos, so please be patient. See you there?</string>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <color key="textColor" name="appLabelColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akf-r8-J9w">
-                                                            <rect key="frame" x="240" y="8" width="32" height="32"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="32" id="6MU-yJ-nJX"/>
-                                                                <constraint firstAttribute="width" constant="32" id="Dig-Fc-SQa"/>
-                                                            </constraints>
-                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal">
-                                                                <imageReference key="image" image="trash.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
-                                                                    <hierarchicalColors>
-                                                                        <color name="appGoldenColor3"/>
-                                                                        <color name="appGoldenColor6"/>
-                                                                        <color systemColor="tertiaryLabelColor"/>
-                                                                    </hierarchicalColors>
-                                                                </imageReference>
-                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="21"/>
-                                                            </state>
-                                                        </button>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstItem="akf-r8-J9w" firstAttribute="leading" secondItem="dlB-nK-bMR" secondAttribute="trailing" constant="8" id="7kg-P3-VAj"/>
-                                                        <constraint firstItem="Ifd-W4-yI5" firstAttribute="top" secondItem="dlB-nK-bMR" secondAttribute="bottom" constant="8" id="8I8-Vg-H1g"/>
-                                                        <constraint firstItem="dlB-nK-bMR" firstAttribute="leading" secondItem="RNg-Gp-eaq" secondAttribute="leading" constant="8" id="ETs-I3-KYf"/>
-                                                        <constraint firstItem="dlB-nK-bMR" firstAttribute="top" secondItem="RNg-Gp-eaq" secondAttribute="top" constant="8" id="L8e-oZ-SmJ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Ifd-W4-yI5" secondAttribute="bottom" constant="8" id="LUU-co-RCp"/>
-                                                        <constraint firstAttribute="trailing" secondItem="akf-r8-J9w" secondAttribute="trailing" constant="8" id="MCG-Wn-nBz"/>
-                                                        <constraint firstItem="akf-r8-J9w" firstAttribute="top" secondItem="RNg-Gp-eaq" secondAttribute="top" constant="8" id="Mlj-Wx-gcm"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Ifd-W4-yI5" secondAttribute="trailing" constant="8" id="kha-Nt-SLF"/>
-                                                        <constraint firstItem="Ifd-W4-yI5" firstAttribute="leading" secondItem="RNg-Gp-eaq" secondAttribute="leading" constant="8" id="xoe-UN-RKO"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <color key="backgroundColor" name="appBackgroundColor1"/>
-                                            <constraints>
-                                                <constraint firstItem="RNg-Gp-eaq" firstAttribute="leading" secondItem="8Zi-oI-DTv" secondAttribute="leading" constant="4" id="3xW-HF-V5i"/>
-                                                <constraint firstItem="RNg-Gp-eaq" firstAttribute="top" secondItem="8Zi-oI-DTv" secondAttribute="top" constant="8" id="C7f-a4-xWB"/>
-                                                <constraint firstAttribute="bottom" secondItem="RNg-Gp-eaq" secondAttribute="bottom" constant="8" id="IE8-Ie-tDB"/>
-                                                <constraint firstAttribute="trailing" secondItem="RNg-Gp-eaq" secondAttribute="trailing" constant="4" id="yfS-1K-cwW"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="announcement" id="Ra5-lL-OyV">
-                                        <rect key="frame" x="0.0" y="189" width="288" height="139"/>
+                                        <rect key="frame" x="0.0" y="50" width="288" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ra5-lL-OyV" id="75f-et-QYs">
                                             <rect key="frame" x="0.0" y="0.0" width="288" height="139"/>
@@ -1586,20 +1521,20 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <color key="separatorColor" red="0.6462585034013606" green="0.55102040816326525" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="gzr-f3-mvE">
-                                        <rect key="frame" x="0.0" y="50" width="288" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="288" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gzr-f3-mvE" id="K5f-FO-Pg3">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ji4-ac-I8E">
-                                                    <rect key="frame" x="16" y="11" width="228" height="21.5"/>
+                                                    <rect key="frame" x="16" y="11" width="228" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="appLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uba-Tb-Lve">
-                                                    <rect key="frame" x="252" y="12" width="20" height="20"/>
+                                                    <rect key="frame" x="252" y="11.5" width="20" height="20"/>
                                                     <color key="backgroundColor" name="appGoldenColor3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="c1v-PI-HoQ"/>
@@ -1748,83 +1683,6 @@ Woo, this sounds like some kind of Russian spy mission. Don't worry guys, all yo
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="appBackgroundColor1"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ideaOwner" id="iNP-CB-Uui">
-                                        <rect key="frame" x="0.0" y="181" width="288" height="131"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iNP-CB-Uui" id="j6g-os-gTM">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="131"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-pw-cPc">
-                                                    <rect key="frame" x="4" y="4" width="280" height="123"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" text="I got a REALLY good idea. It involves every one of you." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1D-gZ-4Er">
-                                                            <rect key="frame" x="8" y="8" width="224" height="41.5"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                            <color key="textColor" name="appLabelColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKz-0P-FcW">
-                                                            <rect key="frame" x="8" y="57.5" width="264" height="57.5"/>
-                                                            <string key="text">Ok so my idea actually sounds really stupid but we gotta like sneak into the classrooms during their practical exams.
-
-Basically we put a single bag of potato chips in the middle of the classroom and then leave.
-
-We'll do this to all classrooms. I mean, this is PSB. We need to support them even during exam period, right?
-
-Everyone. Please discuss among yourselves (among us?) on who is to buy all the chips bags. There's gonna be 8 classes only, so please discuss who is to go out and do some shopping.
-
-This plan needs your help by MONDAY. That's later today. Hopefully you guys find a solution to get some chips, it's hard to sneak out of the school. Do what you need to find some chips.
-
-Make sure they don't have any flavor, so that everyone can eat it. Absolutely NO spicy. I can't stand it and some people can't either.
-
-Woo, this sounds like some kind of Russian spy mission. Don't worry guys, all your efforts will pay off if we work together. Hope this plan goes well.</string>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <color key="textColor" name="appLabelColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzY-cf-x1d">
-                                                            <rect key="frame" x="240" y="8" width="32" height="32"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="32" id="Ouw-bh-G39"/>
-                                                                <constraint firstAttribute="height" constant="32" id="rSb-Hp-LUI"/>
-                                                            </constraints>
-                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal">
-                                                                <imageReference key="image" image="trash.fill" catalog="system" renderingMode="hierarchical">
-                                                                    <hierarchicalColors>
-                                                                        <color name="appGoldenColor3"/>
-                                                                        <color name="appGoldenColor6"/>
-                                                                        <color systemColor="tertiaryLabelColor"/>
-                                                                    </hierarchicalColors>
-                                                                </imageReference>
-                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="21"/>
-                                                            </state>
-                                                        </button>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstItem="nKz-0P-FcW" firstAttribute="top" secondItem="f1D-gZ-4Er" secondAttribute="bottom" constant="8" id="Ceo-fe-qf1"/>
-                                                        <constraint firstAttribute="trailing" secondItem="nKz-0P-FcW" secondAttribute="trailing" constant="8" id="FjR-dd-k5q"/>
-                                                        <constraint firstItem="f1D-gZ-4Er" firstAttribute="top" secondItem="VGY-pw-cPc" secondAttribute="top" constant="8" id="NO9-U2-dmH"/>
-                                                        <constraint firstAttribute="bottom" secondItem="nKz-0P-FcW" secondAttribute="bottom" constant="8" id="S9P-tz-k0w"/>
-                                                        <constraint firstItem="dzY-cf-x1d" firstAttribute="top" secondItem="VGY-pw-cPc" secondAttribute="top" constant="8" id="Xp5-QO-Vqg"/>
-                                                        <constraint firstItem="f1D-gZ-4Er" firstAttribute="leading" secondItem="VGY-pw-cPc" secondAttribute="leading" constant="8" id="ZIP-KP-HNQ"/>
-                                                        <constraint firstItem="nKz-0P-FcW" firstAttribute="leading" secondItem="VGY-pw-cPc" secondAttribute="leading" constant="8" id="gpb-MF-7A3"/>
-                                                        <constraint firstAttribute="trailing" secondItem="dzY-cf-x1d" secondAttribute="trailing" constant="8" id="wBn-za-9NY"/>
-                                                        <constraint firstItem="dzY-cf-x1d" firstAttribute="leading" secondItem="f1D-gZ-4Er" secondAttribute="trailing" constant="8" id="zh3-Zb-Ilj"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="VGY-pw-cPc" secondAttribute="trailing" constant="4" id="EtA-Ax-ZCB"/>
-                                                <constraint firstAttribute="bottom" secondItem="VGY-pw-cPc" secondAttribute="bottom" constant="4" id="eZ6-ln-85h"/>
-                                                <constraint firstItem="VGY-pw-cPc" firstAttribute="leading" secondItem="j6g-os-gTM" secondAttribute="leading" constant="4" id="gr0-zH-zEX"/>
-                                                <constraint firstItem="VGY-pw-cPc" firstAttribute="top" secondItem="j6g-os-gTM" secondAttribute="top" constant="4" id="hjl-Sc-if7"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" name="appBackgroundColor1"/>
-                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6Hm-BY-1qp">
@@ -1904,14 +1762,14 @@ Woo, this sounds like some kind of Russian spy mission. Don't worry guys, all yo
                                 <color key="sectionIndexBackgroundColor" name="appBackgroundColor1"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="gZB-8I-Xrx">
-                                        <rect key="frame" x="0.0" y="50" width="288" height="43"/>
+                                        <rect key="frame" x="0.0" y="50" width="288" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gZB-8I-Xrx" id="kGu-w4-NjO">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sussiest baka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rx-J0-haV">
-                                                    <rect key="frame" x="16" y="11" width="256" height="21"/>
+                                                    <rect key="frame" x="16" y="11" width="256" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="appLabelColor"/>
                                                     <nil key="highlightedColor"/>
@@ -2236,7 +2094,6 @@ Woo, this sounds like some kind of Russian spy mission. Don't worry guys, all yo
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="trash.fill" catalog="system" width="119" height="128"/>
         <namedColor name="appBackgroundColor">
             <color red="0.10199999809265137" green="0.10199999809265137" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

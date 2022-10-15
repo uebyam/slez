@@ -56,14 +56,14 @@
     
     UITableViewCell* cell;
     UIView* cellView;
-    
+    /*
     if ([self.announcements[indexPath.row].author isEqual:currentUser.email]) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"announcementOwner" forIndexPath:indexPath];
         cellView = [cell.contentView viewWithTag:1];
         UIButton* deleteButton = [cellView viewWithTag:4];
         [deleteButton addTarget:self action:@selector(deleteAnnouncement:) forControlEvents:UIControlEventTouchUpInside];
         deleteButton.tag = indexPath.row;
-    } else {
+    } else */ {
         cell = [tableView dequeueReusableCellWithIdentifier:@"announcement" forIndexPath:indexPath];
         cellView = [cell.contentView viewWithTag:1];
     }
