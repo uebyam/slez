@@ -81,6 +81,10 @@
     return self.ideas.count;
 }
 
+- (void)upvoteAnnouncement:(UIButton*)sender {
+    
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell* cell;
     UIView* cellView;
@@ -97,6 +101,10 @@
     
     UILabel* titleLabel = [cellView viewWithTag:2];
     UILabel* infoLabel = [cellView viewWithTag:3];
+    UIButton* downvoteButton = [cellView viewWithTag:100];
+    UIButton* upvoteButton = [cellView viewWithTag:101];
+    
+    [downvoteButton addTarget:self action:@selector(upvoteAnnouncement:) forControlEvents:UIControlEventTouchUpInside];
     
     cellView.layer.cornerRadius = cell.layer.cornerRadius = 16;
     cellView.layer.cornerCurve = cell.layer.cornerCurve = kCACornerCurveContinuous;
