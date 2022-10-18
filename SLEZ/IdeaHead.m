@@ -11,7 +11,7 @@
 
 @implementation Idea
 
-- (instancetype)initWithTitle:(NSString*)title info:(NSString*)info author:(NSString*)author creation:(NSDate*)creation comments:(FIRCollectionReference*)comments {
+- (instancetype)initWithTitle:(NSString*)title info:(NSString*)info author:(NSString*)author creation:(NSDate*)creation comments:(FIRCollectionReference*)comments votes:(NSInteger)votes userVote:(NSInteger)userVote {
     self = [super init];
     
     self.title = title;
@@ -19,6 +19,8 @@
     self.author = author;
     self.creation = creation;
     self.comments = comments;
+    self.votes = votes;
+    self.userVote = userVote;
     
     return self;
 }

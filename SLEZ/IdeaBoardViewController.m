@@ -85,9 +85,15 @@
     
 }
 
+- (void)downvoteAnnouncement:(UIButton*)sender {
+    
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell* cell;
     UIView* cellView;
+    
+    Idea* idea = self.ideas[indexPath.row];
     
     /* if ([self.ideas[indexPath.row].author isEqualToString:currentUser.email]) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"ideaOwner" forIndexPath:indexPath];
@@ -103,15 +109,24 @@
     UILabel* infoLabel = [cellView viewWithTag:3];
     UIButton* downvoteButton = [cellView viewWithTag:100];
     UIButton* upvoteButton = [cellView viewWithTag:101];
+    UILabel* votesCountLabel = [cellView viewWithTag:102];
     
-    [downvoteButton addTarget:self action:@selector(upvoteAnnouncement:) forControlEvents:UIControlEventTouchUpInside];
+    votesCountLabel.text = [NSString stringWithFormat:@"%ld", idea.votes];
+    upvoteButton.imageView.image = idea.userVote > 0 ? [UIImage systemImageNamed:@"arrow.up.square.fill"] : [UIImage systemImageNamed:@"arrow.up.square"];
+    downvoteButton.imageView.image = idea.userVote < 0 ? [UIImage systemImageNamed:@"arrow.down.square.fill"] : [UIImage systemImageNamed:@"arrow.down.square"];
+    
+    [downvoteButton addTarget:self action:@selector(downvoteAnnouncement:) forControlEvents:UIControlEventTouchUpInside];
+    [upvoteButton addTarget:self action:@selector(upvoteAnnouncement:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    downvoteButton.tag = upvoteButton.tag = indexPath.row;
     
     cellView.layer.cornerRadius = cell.layer.cornerRadius = 16;
     cellView.layer.cornerCurve = cell.layer.cornerCurve = kCACornerCurveContinuous;
     cellView.layer.borderWidth = 2;
     cellView.layer.borderColor = UIColor.grayColor.CGColor;
     
-    Idea* idea = self.ideas[indexPath.row];
+    
     
     if (indexPath.row + 1 >= self.ideas.count && self.shouldLoadIdeas) {
         self.shouldLoadIdeas = false;
@@ -158,11 +173,26 @@
             completion(-1, error);
         }
         for (FIRQueryDocumentSnapshot* document in snapshot.documents) {
+            NSDictionary<NSString*, NSNumber*>* votesDict = [document valueForField:@"votes"];
+            NSInteger voteCount = 0;
+            NSInteger userVote = 0;
+            for (NSString* voter in votesDict) {
+                voteCount += [votesDict[voter] longLongValue];
+                if ([voter isEqualToString:currentUser.email]) {
+                    userVote = [votesDict[voter] longLongValue];
+                }
+            }
+            
+            printf("Loaded idea with %ld votes (we voted %ld)\n", voteCount, userVote);
+            
             [self.ideas addObject:[[Idea alloc] initWithTitle:[document valueForField:@"title"]
                                                          info:[document valueForField:@"info"]
                                                        author:[document valueForField:@"author"]
                                                      creation:[document valueForField:@"creation"]
-                                                     comments:[document.reference collectionWithPath:@"discussion"]]];
+                                                     comments:[document.reference collectionWithPath:@"discussion"]
+                                                        votes:voteCount
+                                                     userVote:userVote
+                                  ]];
         }
         completion(snapshot.count, error);
     }];

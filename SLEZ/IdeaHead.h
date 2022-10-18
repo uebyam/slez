@@ -41,8 +41,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString* author;
 @property NSDate* creation;
 @property FIRCollectionReference* comments;
+@property NSInteger votes;
+@property NSInteger userVote;
 
-- (instancetype)initWithTitle:(NSString*)title info:(NSString*)info author:(NSString*)author creation:(NSDate*)creation comments:(FIRCollectionReference*)comments;
+- (instancetype)initWithTitle:(NSString*)title info:(NSString*)info author:(NSString*)author creation:(NSDate*)creation comments:(FIRCollectionReference*)comments votes:(NSInteger)votes userVote:(NSInteger)userVote;
 
 @end
 
